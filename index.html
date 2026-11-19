@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>San Giorgio Ristorante · Menu · Italian on Rundle, Adelaide</title>
+<meta name="description" content="The full menu of San Giorgio Ristorante, 217 Rundle Street Adelaide — wood-oven pizzas, pastas, seafood, steaks, risotto and lunch specials. Book your table.">
+<meta property="og:title" content="San Giorgio Ristorante — The Menu">
+<meta property="og:description" content="Pizza · Pasta · Seafood · Steak on Rundle Street. See the full menu and book your table.">
+<meta property="og:image" content="https://sangiorgio.com.au/wp-content/uploads/2019/07/SanG-Food2019-40-1024x683.jpg">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="https://sangiorgio.com.au/wp-content/uploads/2018/02/cropped-512x512_edited-1-270x270.png">
+<link rel="apple-touch-icon" href="https://sangiorgio.com.au/wp-content/uploads/2018/02/cropped-512x512_edited-1-270x270.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Oregano%7CLato:300,400,700,900&display=swap" rel="stylesheet">
+<style>
+/* San Giorgio brand: Oregano (display) + Lato (text); gold #DFA41A / #EDAE44 on black #111 / #191919, white, greys */
+:root{--gold:#DFA41A;--gold2:#EDAE44;--black:#111111;--black2:#191919;--white:#ffffff;--g1:#EEEEEE;--g2:#AAAAAA;--g3:#696969;--g4:#444444}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:var(--white);color:var(--black2);font-family:Lato,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}button{font:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.ore{font-family:Oregano,Helvetica,Arial,sans-serif;font-weight:400}
+.eyebrow{font-family:Lato;font-weight:700;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0 0}
+.rule::before,.rule::after{content:"";height:1px;width:64px;background:var(--gold)}
+.rule i{width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+
+/* NAV */
+.top{position:fixed;inset:0 0 auto;z-index:60;padding:calc(10px + env(safe-area-inset-top)) 0 10px;transition:.35s;color:#fff}
+.top.solid{background:rgba(17,17,17,.96);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(223,164,26,.45)}
+.top .wrap{display:flex;align-items:center;gap:22px}
+.top .logo{height:46px;width:auto}
+.top nav{margin-left:auto;display:flex;gap:28px}
+.top nav a{text-decoration:none;font-weight:700;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--g1)}
+.top nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-family:Lato;font-weight:900;letter-spacing:.18em;font-size:12.5px;text-transform:uppercase;padding:15px 26px;border:2px solid var(--gold);cursor:pointer;transition:.25s;border-radius:0}
+.btn.gold{background:var(--gold);color:var(--black)}
+.btn.gold:hover{background:var(--gold2);border-color:var(--gold2)}
+.btn.line{background:transparent;color:var(--gold)}
+.btn.line:hover{background:var(--gold);color:var(--black)}
+.btn.dark{background:var(--black);color:var(--gold);border-color:var(--black)}
+.btn.small{padding:11px 18px;font-size:11.5px}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;background:var(--black)}
+.slides{position:absolute;inset:0}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease,transform 7s ease}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(17,17,17,.45),rgba(17,17,17,.9) 78%),linear-gradient(180deg,rgba(17,17,17,.7),transparent 30%,rgba(17,17,17,.96))}
+.hero .in{position:relative;z-index:2;padding:120px 20px 96px;max-width:900px}
+.hero .logo{width:min(480px,80vw);margin:0 auto;filter:drop-shadow(0 6px 22px rgba(0,0,0,.7))}
+.hero .tagl{margin:22px 0 0}
+.hero h1{font-family:Oregano;font-weight:400;font-size:clamp(40px,7vw,78px);line-height:1.02;margin:10px 0 12px;color:#fff;text-shadow:0 3px 24px rgba(0,0,0,.6)}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:clamp(16px,2.2vw,20px);font-weight:300;color:var(--g1);max-width:640px;margin:0 auto 30px}
+.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero .meta{margin-top:34px;display:flex;gap:10px 28px;justify-content:center;flex-wrap:wrap;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--g2)}
+.hero .meta b{color:var(--gold)}
+.scrolldown{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;animation:bob 2.4s infinite}
+@keyframes bob{50%{transform:translate(-50%,6px)}}
+
+/* STRIP */
+.strip{background:var(--gold);color:var(--black);overflow:hidden}
+.strip div{display:flex;gap:46px;white-space:nowrap;padding:13px 0;animation:mq 40s linear infinite;width:max-content;font-family:Oregano;font-size:22px}
+.strip span::after{content:"•";margin-left:46px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.sec{padding:88px 0}
+.head{text-align:center;margin-bottom:42px}
+.head h2{font-family:Oregano;font-weight:400;font-size:clamp(38px,5.4vw,58px);line-height:1.05;margin:6px 0 0}
+.head p{max-width:640px;margin:16px auto 0;color:var(--g3);font-size:17px}
+.dark{background:var(--black);color:#fff}
+.dark .head h2{color:#fff}.dark .head p{color:var(--g2)}
+.grey{background:var(--g1)}
+
+/* SIGNATURES */
+.sig{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+.sig::-webkit-scrollbar{display:none}
+.sig .card{scroll-snap-align:start;position:relative;overflow:hidden;aspect-ratio:3/4;cursor:pointer;border:1px solid rgba(223,164,26,.4);background:var(--black2)}
+.sig img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.sig .card:hover img{transform:scale(1.06)}
+.sig .cap{position:absolute;inset:auto 0 0;padding:80px 20px 20px;background:linear-gradient(transparent,rgba(17,17,17,.96))}
+.sig .cap b{display:block;font-family:Oregano;font-weight:400;font-size:28px;line-height:1.05;color:#fff}
+.sig .cap i{display:block;font-style:normal;color:var(--g2);font-size:14px;margin-top:6px}
+.sig .spr{position:absolute;top:16px;right:16px;background:var(--gold);color:var(--black);font-weight:900;font-size:14px;padding:6px 10px}
+.sig-nav{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+.sig-nav button{width:46px;height:46px;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer;font-size:18px}
+.sig-nav button:hover{background:var(--gold);color:var(--black)}
+
+/* LUNCH */
+.lunch{display:grid;grid-template-columns:1.05fr 1fr;background:var(--black);color:#fff;border:1px solid var(--gold)}
+.lunch .ph{position:relative;min-height:440px}
+.lunch .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lunch .ph .stamp{position:absolute;left:22px;bottom:22px;background:var(--gold);color:var(--black);padding:14px 20px;text-align:center}
+.lunch .ph .stamp b{display:block;font-family:Oregano;font-weight:400;font-size:34px;line-height:1}
+.lunch .ph .stamp span{font-size:11px;font-weight:900;letter-spacing:.24em;text-transform:uppercase}
+.lunch .tx{padding:40px 38px}
+.lunch .tx h3{font-family:Oregano;font-weight:400;font-size:44px;line-height:1;margin:6px 0 18px;color:var(--gold)}
+.tier{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--g4);padding:11px 0}
+.tier span{font-weight:700;font-size:16px}.tier small{display:block;color:var(--g2);font-weight:400;font-size:14px}
+.tier b{font-weight:900;color:var(--gold);font-size:19px;white-space:nowrap}
+.drinks6{margin-top:22px;display:flex;gap:18px;align-items:center;border:1px solid var(--gold);padding:16px 18px}
+.drinks6 .big{font-family:Oregano;font-size:54px;color:var(--gold);line-height:1}
+.drinks6 p{margin:0;font-size:14.5px;line-height:1.45;color:var(--g1)}
+.drinks6 p b{font-weight:900;letter-spacing:.18em;font-size:12px;color:var(--gold);text-transform:uppercase}
+
+/* MENU TOOLS */
+.mtools{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--g1);padding-top:calc(66px + env(safe-area-inset-top))}
+.mtools .row1{display:flex;gap:10px;align-items:center;padding:10px 0 8px}
+.search{flex:1;display:flex;align-items:center;gap:10px;background:var(--g1);padding:0 16px;max-width:460px}
+.search input{border:0;outline:0;background:transparent;font-family:Lato;font-size:15px;padding:12px 0;width:100%;color:var(--black2)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.chips::-webkit-scrollbar,.tabs::-webkit-scrollbar{display:none}
+.chip{flex:none;font-family:Lato;font-size:12px;font-weight:700;letter-spacing:.06em;border:1px solid var(--g2);background:#fff;padding:8px 13px;cursor:pointer;color:var(--g3)}
+.chip[aria-pressed=true]{background:var(--black);border-color:var(--black);color:var(--gold)}
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:2px 0 10px}
+.tabs a{flex:none;text-decoration:none;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;color:var(--g3);white-space:nowrap;border-bottom:2px solid transparent}
+.tabs a.on{color:var(--black);border-bottom-color:var(--gold)}
+
+/* MENU */
+.cat{margin-top:64px}
+.banner{position:relative;height:230px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;background:var(--black)}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.94),rgba(17,17,17,.5) 60%,rgba(17,17,17,.12))}
+.banner .t{position:relative;z-index:2;padding:24px 28px}
+.banner .it{font-size:12px;font-weight:900;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.banner h3{margin:2px 0 0;font-family:Oregano;font-weight:400;font-size:46px;line-height:1}
+.banner .n{font-size:14px;color:var(--g1);margin-top:6px}
+.banner::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--gold);z-index:3}
+.sizes-h{display:flex;justify-content:flex-end;margin:16px 4px -6px;font-weight:900;font-size:12px;letter-spacing:.1em;color:var(--gold)}
+.sizes-h span{width:58px;text-align:right}
+.note{margin:14px 0 0;background:var(--g1);border-left:4px solid var(--gold);padding:11px 14px;font-size:14px;color:var(--g4)}
+.note b{color:var(--black)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:4px}
+.dish{display:flex;gap:16px;padding:20px 4px;border-bottom:1px solid var(--g1);cursor:pointer;transition:background .2s;align-items:flex-start}
+.dish:hover{background:#fcf8ee}
+.dish .th{flex:none;width:104px;height:104px;overflow:hidden;border:2px solid var(--gold)}
+.dish .th img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.dish:hover .th img{transform:scale(1.08)}
+.dish .bd{flex:1;min-width:0}
+.dish .nm{display:flex;align-items:baseline;gap:8px}
+.dish .nm h4{margin:0;font-family:Oregano;font-weight:400;font-size:25px;line-height:1.1;color:var(--black)}
+.dish .dots{flex:1;border-bottom:1px dotted var(--g2);min-width:10px;transform:translateY(-6px)}
+.dish .pr{font-weight:900;color:var(--black);font-size:17px;white-space:nowrap}
+.dish .prs{display:flex;font-weight:900;color:var(--black);font-size:15px}
+.dish .prs span{width:58px;text-align:right}
+.dish .ds{margin:5px 0 0;color:var(--g3);font-size:15px;line-height:1.5}
+.ings{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.ings span{font-size:12.5px;background:var(--g1);color:var(--g4);padding:4px 10px}
+.tags{display:inline-flex;gap:4px;vertical-align:middle;margin-left:8px;transform:translateY(-3px)}
+.tg{font-family:Lato;font-weight:900;font-size:9.5px;letter-spacing:.08em;padding:2px 6px;border:1px solid var(--gold);color:#9a6f0c;background:#fff}
+.tg.hot{background:var(--black);color:var(--gold);border-color:var(--black)}
+.empty{display:none;text-align:center;padding:60px 0;color:var(--g3)}
+.legend{margin-top:52px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;font-size:14px;color:var(--g3);border-top:1px solid var(--g1);padding-top:22px}
+.legend .sur{flex-basis:100%;color:var(--black);font-weight:900}
+
+/* BOOK */
+.book{display:grid;grid-template-columns:1fr 1.1fr;border:1px solid var(--gold);background:var(--black2)}
+.book .ph{position:relative;min-height:540px}
+.book .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.book .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(17,17,17,.92),transparent 60%)}
+.book .ph .q{position:absolute;z-index:2;left:28px;right:28px;bottom:28px;color:#fff;font-family:Oregano;font-size:32px;line-height:1.15}
+.book .ph .q b{display:block;font-family:Lato;font-weight:900;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.book form{padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.book form .full{grid-column:1/-1}
+.book label{font-size:11px;font-weight:900;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:grid;gap:7px}
+.book input,.book select,.book textarea{font-family:Lato;font-size:16px;color:#fff;background:var(--black);border:1px solid var(--g4);padding:13px;outline:0;width:100%;border-radius:0}
+.book input:focus,.book select:focus,.book textarea:focus{border-color:var(--gold)}
+.book .acts{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.book .fine{font-size:13px;color:var(--g2);margin:0}
+.ok{display:none;grid-column:1/-1;border:1px solid var(--gold);color:var(--g1);padding:12px 14px;font-size:14px}
+
+/* VISIT */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:#fff;border:1px solid var(--g1);padding:32px;position:relative}
+.panel h3{font-family:Oregano;font-weight:400;font-size:34px;line-height:1.05;margin:0 0 10px}
+.panel p{margin:0 0 12px;color:var(--g4)}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--g1)}.hours td:last-child{text-align:right;font-weight:900}
+.open{display:inline-block;margin-top:14px;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;background:var(--black);color:var(--gold)}
+.open.n{background:var(--g1);color:var(--g3)}
+.map{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.35)}
+.photo-panel{padding:0;overflow:hidden;min-height:320px;color:#fff;display:flex;align-items:flex-end;text-decoration:none;background:var(--black)}
+.photo-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo-panel::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(17,17,17,.94),rgba(17,17,17,.15))}
+.photo-panel .t{position:relative;z-index:2;padding:32px}
+.photo-panel h3{color:var(--gold)}.photo-panel p{color:var(--g1)}
+
+footer{background:var(--black);color:var(--g2);text-align:center;padding:60px 20px calc(96px + env(safe-area-inset-bottom));border-top:3px solid var(--gold)}
+footer .logo{width:260px;margin:0 auto 16px}
+footer p{margin:6px 0;font-size:14px}
+footer a{color:var(--gold)}
+footer .slog{font-family:Oregano;font-size:26px;color:#fff}
+
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(17,17,17,.82);backdrop-filter:blur(4px);padding:20px}
+.modal.on{display:flex}
+.mbox{background:#fff;max-width:580px;width:100%;max-height:90vh;overflow:auto;border-top:5px solid var(--gold);box-shadow:0 30px 80px rgba(0,0,0,.55);position:relative;animation:pop .25s ease}
+@keyframes pop{from{transform:translateY(14px);opacity:0}}
+.mbox .mi{height:320px;background:var(--black)}
+.mbox .mi img{width:100%;height:100%;object-fit:cover}
+.mbox .mc{padding:24px 28px 30px}
+.mbox h3{font-family:Oregano;font-weight:400;font-size:40px;line-height:1.05;margin:6px 0 6px}
+.mbox .mp{font-weight:900;font-size:20px}
+.mbox .ml{font-size:11px;font-weight:900;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:20px 0 8px}
+.mbox .x{position:absolute;top:12px;right:12px;z-index:3;width:42px;height:42px;border:1px solid var(--gold);background:var(--black);color:var(--gold);font-size:22px;cursor:pointer}
+.mbox .ings span{font-size:14px;padding:6px 12px}
+
+.fab{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));z-index:45;display:none;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+.top nav{display:none}.top .btn{margin-left:auto}
+.grid{grid-template-columns:1fr}
+.lunch,.book,.duo{grid-template-columns:1fr}
+.lunch .ph,.book .ph{min-height:260px}
+.book form{grid-template-columns:1fr;padding:26px 20px}
+.lunch .tx{padding:28px 22px}
+.fab{display:inline-flex}
+.sec{padding:66px 0}
+}
+@media (max-width:520px){
+.dish .th{width:80px;height:80px}
+.dish .nm h4{font-size:22px}
+.dish .prs span,.sizes-h span{width:48px}
+.dish .prs{font-size:14px}
+.banner{height:180px}.banner h3{font-size:38px}
+.top .logo{height:36px}
+.sig{grid-auto-columns:80%}
+.hero .meta{font-size:10.5px;gap:8px 16px}
+.mbox .mi{height:240px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+<div class="wrap">
+<a href="#home" aria-label="San Giorgio home"><img class="logo" src="https://sangiorgio.com.au/wp-content/uploads/2018/02/logo_edited-1-1.png" alt="San Giorgio Ristorante"></a>
+<nav><a href="#signatures">Signatures</a><a href="#lunch">Lunch</a><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+<a class="btn gold small" href="#book">Book a Table</a>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="slides" id="slides"></div>
+<div class="in">
+<img class="logo" src="https://sangiorgio.com.au/wp-content/uploads/2018/02/logo_edited-1-1.png" alt="San Giorgio Ristorante">
+<div class="eyebrow tagl">Pizza · Pasta · Seafood · Steak</div>
+<h1>Italian on <span>Rundle</span></h1>
+<p class="lead">Authentic, fresh Italian food in the heart of Rundle Street — from flame-kissed seafood to wood-oven pizza, made the way Nonna would approve.</p>
+<div class="ctas">
+<a class="btn gold" href="#menu">Explore the Menu</a>
+<a class="btn line" href="#book">Book Your Table</a>
+</div>
+<div class="meta"><span><b>★ 4.2</b> on Google · 1,467 reviews</span><span>Dine in</span><span>Takeaway</span><span>Delivery</span></div>
+</div>
+<a class="scrolldown" href="#signatures">Scroll ↓</a>
+</section>
+
+<div class="strip" aria-hidden="true"><div id="strip"></div></div>
+
+<section class="sec dark" id="signatures">
+<div class="wrap">
+<div class="head reveal">
+<div class="eyebrow">Le Specialità</div>
+<h2>Chef's Signatures</h2>
+<div class="rule"><i></i></div>
+<p>The plates Adelaide keeps coming back for — photographed in our kitchen.</p>
+</div>
+<div class="sig" id="sig"></div>
+<div class="sig-nav"><button aria-label="Previous" onclick="sigEl.scrollBy({left:-300,behavior:'smooth'})">←</button><button aria-label="Next" onclick="sigEl.scrollBy({left:300,behavior:'smooth'})">→</button></div>
+</div>
+</section>
+
+<section class="sec grey" id="lunch">
+<div class="wrap">
+<div class="head reveal">
+<div class="eyebrow">Pranzo · Every day until 4pm</div>
+<h2>The Long Italian Lunch</h2>
+<div class="rule"><i></i></div>
+<p>Big Italian flavour at a lunchtime price — and $6 drinks until 5pm.</p>
+</div>
+<div class="lunch reveal">
+<div class="ph"><img src="https://sangiorgio.com.au/wp-content/uploads/2019/07/SanG-Food2019-54-1024x683.jpg" alt="Tropical chicken parmigiana with chips and salad"><div class="stamp"><b>Until 4pm</b><span>Lunch menu</span></div></div>
+<div class="tx">
+<div class="eyebrow">Lunch Specials</div>
+<h3>Mezzogiorno</h3>
+<div class="tier"><span>Lunch Pizzas<small>9 inch · Margherita, Hawaiian, Meatlovers &amp; more</small></span><b>$17.90</b></div>
+<div class="tier"><span>Lunch Pastas<small>Vegetarian Rose, Pollo &amp; Bacon, Napoletana, Bolognese</small></span><b>$18.90</b></div>
+<div class="tier"><span>Burgers &amp; Brunch<small>Smashed avocado, schnitzel burger, classic burger</small></span><b>$22.90</b></div>
+<div class="tier"><span>Lunch Mains<small>Salmon, parmigianas, lamb salad, fish burger</small></span><b>$24.90</b></div>
+<div class="tier"><span>200g Scotch Fillet<small>With garden salad and chips</small></span><b>$30.90</b></div>
+<div class="drinks6"><div class="big">$6</div><p><b>Drinks until 5pm</b><br>All beers · All ciders · House Shiraz · House Sauvignon Blanc</p></div>
+<div style="margin-top:22px"><a class="btn line small" href="#c-lunch-pizzas">See the lunch menu</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="menu">
+<div class="mtools" id="mtools">
+<div class="wrap">
+<div class="row1">
+<label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#696969" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search a dish or ingredient — prawn, feta, carbonara…" autocomplete="off"></label>
+<div class="chips" role="group" aria-label="Dietary filters">
+<button class="chip" data-f="gf" aria-pressed="false">Gluten free</button>
+<button class="chip" data-f="v" aria-pressed="false">Vegetarian</button>
+<button class="chip" data-f="df" aria-pressed="false">Dairy free</button>
+<button class="chip" data-f="hot" aria-pressed="false">Spicy</button>
+<button class="chip" data-f="sea" aria-pressed="false">Seafood</button>
+</div>
+</div>
+<nav class="tabs" id="tabs"></nav>
+</div>
+</div>
+<div class="wrap" style="padding-bottom:76px">
+<div class="head reveal" style="margin:60px 0 0">
+<div class="eyebrow">Il Menù</div>
+<h2>The Full Menu</h2>
+<div class="rule"><i></i></div>
+<p>Every dish, every ingredient — tap any dish for the full details.</p>
+</div>
+<div id="menuBody"></div>
+<div class="empty" id="empty">No dishes match that search — try another ingredient.</div>
+<div class="legend">
+<span><span class="tg">GF</span> Gluten free</span><span><span class="tg">V</span> Vegetarian</span><span><span class="tg">DF</span> Dairy free</span><span><span class="tg">M</span> Mixed origin</span><span><span class="tg hot">HOT</span> Spicy</span>
+<span class="sur">A 10% surcharge applies on Sundays &amp; public holidays.</span>
+<span>Please tell our team about any allergies before ordering. All prices in AUD.</span>
+</div>
+</div>
+</section>
+
+<section class="sec dark" id="book">
+<div class="wrap">
+<div class="head reveal">
+<div class="eyebrow">Prenota</div>
+<h2>Book Your Table</h2>
+<div class="rule"><i></i></div>
+<p>Date night, family feast or a long lunch with friends — save your seat at San Giorgio.</p>
+</div>
+<div class="book reveal">
+<div class="ph"><img src="https://sangiorgio.com.au/wp-content/uploads/2019/07/SanG2019-22-1024x683.jpg" alt="San Giorgio dining room"><div class="q">Your table on Rundle Street is waiting.<b>San Giorgio Ristorante</b></div></div>
+<form id="bookForm" novalidate>
+<label class="full">Your name<input name="name" required autocomplete="name" placeholder="Full name"></label>
+<label>Phone<input name="phone" required type="tel" autocomplete="tel" placeholder="04xx xxx xxx"></label>
+<label>Guests<select name="guests"><option>2</option><option>1</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10+</option></select></label>
+<label>Date<input name="date" type="date" required></label>
+<label>Time<select name="time" id="timeSel"></select></label>
+<label class="full">Special requests<textarea name="notes" rows="3" placeholder="Birthday, high chair, allergies…"></textarea></label>
+<div class="ok" id="ok"></div>
+<div class="full acts">
+<button class="btn gold" type="submit">Request Booking</button>
+<a class="btn line" href="tel:0882231700">Call (08) 8223 1700</a>
+</div>
+<p class="full fine">This opens a ready-to-send email to info@sangiorgio.com.au, and our team will confirm your table. For same-day bookings or groups of 10+, please call.</p>
+</form>
+</div>
+</div>
+</section>
+
+<section class="sec" id="visit">
+<div class="wrap">
+<div class="head reveal"><div class="eyebrow">Vieni a Trovarci</div><h2>Visit Us</h2><div class="rule"><i></i></div></div>
+<div class="duo reveal">
+<div class="panel">
+<h3>217 Rundle Street</h3>
+<p>Adelaide SA 5000<br><a href="tel:0882231700">(08) 8223 1700</a> · <a href="mailto:info@sangiorgio.com.au">info@sangiorgio.com.au</a></p>
+<table class="hours"><tr><td>Sunday – Thursday</td><td>11:30am – 9:30pm</td></tr><tr><td>Friday – Saturday</td><td>11:30am – 10:30pm</td></tr></table>
+<span class="open" id="openNow"></span>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+<a class="btn gold small" href="https://www.google.com/maps/search/?api=1&query=San+Giorgio+217+Rundle+Street+Adelaide">Get Directions</a>
+<a class="btn dark small" href="https://www.facebook.com/italianonrundle/">Facebook</a>
+</div>
+</div>
+<div class="panel" style="padding:0;min-height:320px"><iframe class="map" title="Map to San Giorgio" loading="lazy" src="https://maps.google.com/maps?q=217%20Rundle%20Street%2C%20Adelaide%20SA&z=16&output=embed"></iframe></div>
+<div class="panel photo-panel"><img loading="lazy" src="https://sangiorgio.com.au/wp-content/uploads/2019/07/SanG2019-46-1024x471.jpg" alt="San Giorgio on Rundle Street at night"><div class="t"><h3>Find us on Rundle</h3><p>In the heart of Adelaide's East End — look for the gold sign.</p></div></div>
+<a class="panel photo-panel" href="https://sangiorgio.com.au/functions-2/"><img loading="lazy" src="https://sangiorgio.com.au/wp-content/uploads/2019/07/SanG2019-40-1024x683.jpg" alt="San Giorgio bar"><div class="t"><h3>Celebrate with Us</h3><p>Birthdays, engagements and corporate dinners — set menus, platters, buffets and grazing tables, in-house or we come to you.</p><span class="btn line small">Explore Functions →</span></div></a>
+</div>
+</div>
+</section>
+
+<footer>
+<img class="logo" src="https://sangiorgio.com.au/wp-content/uploads/2018/02/logo_edited-1-1.png" alt="San Giorgio Ristorante">
+<p class="slog">Italian on Rundle!</p>
+<p>217 Rundle Street, Adelaide SA · <a href="tel:0882231700">(08) 8223 1700</a> · <a href="https://sangiorgio.com.au/">sangiorgio.com.au</a></p>
+<p style="opacity:.6;font-size:12px;margin-top:16px">Prices subject to change. Please let us know about allergies.</p>
+</footer>
+
+<a class="btn gold fab" href="#book">Book Your Table</a>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mbox" id="mbox"></div></div>
+
+<script>
+const W="https://sangiorgio.com.au/wp-content/uploads/";
+// All photos are San Giorgio's own, from sangiorgio.com.au
+const PH={
+lasagna:"2019/07/SanG-Food2019-125-1024x683.jpg", granchio:"2019/07/SanG-Food2019-103-683x1024.jpg", ribs:"2019/07/SanG-Food2019-19-1024x683.jpg",
+special:"2019/07/SanG-Food2019-42-1024x683.jpg", capricosa:"2019/07/SanG-Food2019-43-1024x683.jpg", sgpizza:"2019/07/SanG-Food2019-71-1024x683.jpg",
+gcalamari:"2019/07/SanG-Food2019-91-1024x683.jpg", salmone:"2018/03/fettuccini-al-salmone-4-1-1024x683.jpg", tropical:"2019/07/SanG-Food2019-54-1024x683.jpg",
+wedges:"2019/07/SanG-Food2019-27-1024x683.jpg", bolognese:"2018/03/spaghetti-bolognese-1024x683.jpg", marinara:"2019/07/SanG-Food2019-40-1024x683.jpg",
+gveg:"2018/03/Gourmet-Veg-2-1024x683.jpg", bsalmon:"2018/02/Balsamic-salmon-5-1024x683.jpg", parmi:"2018/02/chicken-parmianga-2-1024x683.jpg",
+hawaiian:"2018/03/Hawaiian-pizza-1-1024x683.jpg", pepperoni:"2018/03/SanG-24.jpg", kilpatrick:"2018/03/oysters-Kirkpatrick-3-1024x683.jpg",
+natural:"2018/02/DSCF2699-1024x683.jpg", antipasto:"2018/02/DSCF2691-1024x683.jpg", sps:"2018/02/DSCF2659-1024x683.jpg", bacon:"2018/02/brusketa-17-172-1024x683.jpg",
+greek:"2019/07/SanG-Food2019-63-1024x683.jpg", warmchicken:"2018/03/warm-chicken-salad-2-1024x683.jpg", princess:"2018/03/Princess-pasta-3-1024x683.jpg",
+panna:"2018/03/SanG-25.jpg", vrisotto:"2018/03/vegetarian-risotto-5-1024x683.jpg", srisotto:"2018/03/SanG.jpg", funghi:"2018/03/SanG-49.jpg",
+scotch:"2018/03/scotch-fillet-steak-4-1024x683.jpg", surfturf:"2018/03/Pollo-surf-n-turf-4-1-1024x683.jpg", riale:"2018/03/pollo-riale-1-1024x683.jpg",
+platter:"2018/03/seafood-platter-4-1024x683.jpg", pennebol:"2018/03/Penne-Bolognese-2-1024x683.jpg",
+// atmosphere / banners
+flame:"2018/02/IMG_9624-1024x683.jpg", steam:"2018/02/13086689_971589226281299_6597108054261518588_o-1024x683.jpg", pan:"2019/07/SanG2019-59-1024x683.jpg",
+room:"2019/07/SanG2019-22-1024x683.jpg", neon:"2019/07/SanG2019-48-1024x683.jpg"
+};
+const img=k=>W+PH[k];
+// [name, description, price(s), tags, photo]
+const MENU=[
+{id:"lunch-pizzas",it:"Pranzo · until 4pm",t:"Lunch Pizzas",n:"9 inch · $17.90 each",b:"hawaiian",lunch:1,items:[
+["Margherita","Tomato sauce, mozzarella, fresh tomato, basil, herbs","17.90",{v:1}],
+["Australian","Tomato sauce, mozzarella, ham","17.90"],
+["American","Tomato sauce, mozzarella, salami","17.90"],
+["Hawaiian","Tomato sauce, mozzarella, pineapple, ham","17.90",0,"hawaiian"],
+["Vegetarian","Tomato sauce, mozzarella, capsicum, mushroom, onion, pineapple, olives","17.90",{v:1}],
+["Meatlovers","Tomato sauce, mozzarella, ham, bacon, salami","17.90"]]},
+{id:"lunch-pastas",it:"Pranzo · until 4pm",t:"Lunch Pastas",n:"$18.90 each",b:"pennebol",lunch:1,
+pre:"Choose <b>Classic</b>: spaghetti, fettuccine, linguine or penne · <b>Premium</b>: gnocchi, tortellini or ravioli (+$3) · <b>GF</b> penne (+$5)",items:[
+["Vegetarian Rose","Onion, olives, capsicum, mushroom","18.90",{v:1}],
+["Pollo & Bacon","Chicken breast, bacon, onion, white sauce","18.90"],
+["Napoletana","Homemade tomato sugo","18.90",{v:1}],
+["Bolognese","Homemade minced beef and tomato sugo","18.90",0,"bolognese"]]},
+{id:"lunch-specials",it:"Pranzo · until 4pm",t:"Lunch Specials",n:"From $22.90",b:"tropical",lunch:1,items:[
+["Smashed Avocado","Poached eggs on a bed of smashed avocado with feta cheese on homemade bread with hash browns.","22.90",{v:1}],
+["Chicken Schnitzel Burger","Chicken schnitzel, sliced tomato, cheese, lettuce, grilled pineapple, dijonnaise sauce, brioche bun, served with chips.","22.90"],
+["Classic Burger","Homemade beef patty, crispy bacon, cheese, lettuce, homemade BBQ sauce, brioche bun, served with chips.","22.90",{hot:1}],
+["Atlantic Salmon","Crispy salmon fillet, glazed with homemade sweet lemon sauce, served with seasonal vegetables.","24.90",{m:1,sea:1}],
+["Chorizo Spaghetti","Spicy chorizo Italian sausage, olives, Spanish onion, roasted capsicum, anchovies, chilli, garlic, Napoletana sauce.","24.90",{hot:1}],
+["Lamb Salad","Marinated lamb strips, lettuce, tomato, cucumber, Spanish onion, crumbled feta, tzatziki, served with warm pita bread.","24.90"],
+["Tropical Chicken Parmigiana","Topped with Napoletana, leg ham, pineapple, melted mozzarella. Served with chips and salad.","24.90",0,"tropical"],
+["BBQ Chicken Parmigiana","Topped with BBQ sauce, mushroom, onion, melted mozzarella. Served with chips and salad.","24.90"],
+["Crunchy Fish Burger","Crunchy fish fillet, lettuce, fennel, tartare sauce, brioche bun. Served with chips.","24.90",{m:1,sea:1}],
+["200g Scotch Fillet Steak","Cooked to your liking. Served with a side garden salad and chips. Add a side sauce — mushroom, Diane, pepper or gravy ($6).","30.90",0,"scotch"]]},
+{id:"starters",it:"Antipasti",t:"Starters",n:"To share — or not",b:"antipasto",items:[
+["Italian Meatballs","4 Italian house-made meatballs, served with crusty garlic bread in a Napoletana sauce.","22.00"],
+["Soup of the Day","Seasonal. Served with bread rolls.","19.00"],
+["Classic Arancini di Riso","4 fried vegetarian risotto rice balls with cheese in Napoletana sauce.","21.00",{v:1}],
+["Antipasto","Chef's selection of cheeses, cold meats and grilled seafood, served with bread rolls. Serves two.","35.00",{sea:1},"antipasto"],
+["Calamari Bella","Fresh squid lightly fried, tossed with lemon and garlic, served on a bed of salad drizzled with balsamic glaze.","25.00",{sea:1}]]},
+{id:"oysters",it:"Ostriche",t:"Oysters",n:"Price on application",b:"kilpatrick",items:[
+["Natural","Served with fresh lemon.","POA",{gf:1,df:1,sea:1},"natural"],
+["Kilpatrick","Cooked in Worcestershire sauce and topped with bacon.","POA",{gf:1,df:1,sea:1},"kilpatrick"],
+["Florentine","Cooked in creamy sauce with spinach and topped with parmesan cheese.","POA",{gf:1,sea:1}]]},
+{id:"bruschetta",it:"Bruschette & Pane",t:"Bruschettas & Breads",n:"Toasted in the wood oven",b:"bacon",items:[
+["Tomato Bruschetta","Two toasted wood-oven breads topped with tomato, lemon, cracked pepper, garlic, fresh basil, olive oil.","16.00",{v:1}],
+["Italian Bruschetta","Two toasted wood-oven breads topped with fresh tomato, garlic, bocconcini cheese, prosciutto, fresh basil, olive oil.","18.00"],
+["Bacon Bruschetta","Two toasted wood-oven breads topped with tomato, lemon, cracked pepper, garlic, basil, oregano, bacon, caesar dressing.","18.00",0,"bacon"],
+["Garlic Bread","4 slices of wood-oven bread toasted with homemade garlic butter.","11.00",{v:1}],
+["Cheese Bread","4 slices of wood-oven bread toasted with garlic butter, topped with mozzarella and bocconcini cheese.","14.00",{v:1}]]},
+{id:"focaccia",it:"Focaccia",t:"Focaccia",n:"Served with chips",b:"room",items:[
+["Vegetarian Focaccia","Grilled mushroom, roasted capsicum, avocado, baby spinach, basil oil, mozzarella cheese, served with chips.","23.00",{v:1}],
+["Chicken Focaccia","Chicken breast, avocado, lettuce, mayonnaise, served with chips.","25.00"]]},
+{id:"insalata",it:"Insalate",t:"Salads",n:"Crisp, bright & generous",b:"greek",items:[
+["Greek","Cos lettuce, feta cheese, olives, tomato, onion, cucumber, capsicum, chef's dressing","20.00",{gf:1,v:1},"greek"],
+["Italian","Cos lettuce, tomato, red onion, cucumber, olives, red capsicum, Italian glaze","20.00",{gf:1,df:1,v:1}],
+["Caesar","Cos lettuce, croutons, bacon, poached egg, anchovies, parmesan cheese. Add chicken $6.","25.00",{m:1}],
+["Warm Chicken Salad","Cos lettuce, roasted capsicum, cucumber, olives, tomato, red onion, balsamic glaze, Italian dressing","29.00",{gf:1,df:1},"warmchicken"],
+["Prawn Salad","Cos lettuce, cucumber, tomato, walnuts, roasted capsicum, olives, red onion, pan-fried prawns, honey mustard dressing","32.00",{gf:1,m:1,sea:1}]]},
+{id:"pizzas",it:"Le Pizze",t:"Pizzas",n:"9″ · 12″ · 15″ — gluten-free 12″ base +$6",b:"capricosa",sizes:1,items:[
+["Margherita","Tomato sauce, mozzarella, fresh tomato, basil, herbs",[22,29,36],{v:1}],
+["Australian","Tomato sauce, mozzarella, ham",[22,29,36]],
+["Pepperoni","Tomato sauce, mozzarella, pepperoni",[22,29,36],0,"pepperoni"],
+["Hawaiian","Tomato sauce, mozzarella, pineapple, ham",[23,29,36],0,"hawaiian"],
+["Capricosa","Tomato sauce, mozzarella, olives, salami, mushroom",[23,31,38],0,"capricosa"],
+["Vegetarian","Tomato sauce, mozzarella, capsicum, mushroom, onion, pineapple, olives",[23,31,38],{v:1}],
+["Special","Tomato sauce, mozzarella, ham, capsicum, mushroom, salami, olives",[24,32,39],0,"special"],
+["Meatlovers","Tomato sauce, mozzarella, ham, bacon, salami",[23,31,38]],
+["Mexican","Tomato sauce, mozzarella, capsicum, onion, pepperoni, olives, chilli",[23,31,38],{hot:1}],
+["San Giorgio","Tomato sauce, mozzarella, fresh tomato, capsicum, onion, salami, olives",[23,31,38],0,"sgpizza"],
+["Supreme","Tomato sauce, mozzarella, ham, mushroom, salami, onion, capsicum, pineapple, olives, anchovies, prawns",[25,33,40],{m:1,sea:1}],
+["BBQ Chicken","Tomato sauce, mozzarella, onion, mushroom, chicken, BBQ sauce",[25,33,40]],
+["Yiros","Tomato sauce, mozzarella, red onion, lamb meat, tzatziki",[25,33,40]],
+["Chorizo","Tomato sauce, mozzarella, olives, chorizo, prosciutto",[25,33,40]],
+["Seafood","Tomato sauce, mozzarella, prawns, anchovies, oysters",[27,35,42],{m:1,sea:1}],
+["Gourmet Vegetarian","Tomato sauce, mozzarella, roast capsicum, artichoke, olives, sundried tomato, feta",[26,34,41],{v:1},"gveg"],
+["Gourmet Marinara","Tomato sauce, mozzarella, prawns, calamari, scallop, fish, mussels, garlic",[28,36,43],{m:1,sea:1}],
+["Gourmet Meatlovers","Tomato sauce, mozzarella, chorizo, bacon, pepperoni, chicken, lamb strips",[26,34,41]]]},
+{id:"pastas",it:"Le Paste",t:"Pastas",n:"Choose your pasta, we'll do the rest",b:"salmone",
+pre:"<b>Classic</b>: spaghetti, fettuccine, linguine, penne · <b>Premium</b>: gnocchi, tortellini, ravioli (+$3) · <b>GF pasta</b>: penne (+$5)",items:[
+["Napoletana","Homemade Napoletana sauce, onion, garlic, herbs","26.00",{v:1}],
+["Bolognese","Homemade Bolognese sauce, wine, onion, garlic","30.00",0,"bolognese"],
+["Puttanesca","Anchovies, cherry tomato, garlic, chilli, wine, olives, capers, herbs, Napoletana","33.00",{hot:2}],
+["Vegetarian","Mushrooms, onion, olives, carrot, capsicum, cherry tomato, broccolini, baby spinach, olive oil base","33.00",{v:1}],
+["Alla Panna","Mushroom, ham, parmesan cheese, cream, wine, garlic","33.00",0,"panna"],
+["Carbonara","Bacon, egg yolk, black pepper, wine, parmesan, cream","33.00"],
+["Princess","Prawn, chicken, bacon, mushroom, garlic, wine, onion, chilli, rose sauce","39.00",{m:1,hot:1,sea:1},"princess"],
+["Lasagna","Homemade lasagna with bechamel, minced beef, Napoletana and parmesan — served with side salad.","33.00",0,"lasagna"],
+["Al Salmone","Smoked salmon, mushroom, wine, cream","35.00",{m:1,sea:1},"salmone"],
+["Granchio","Crab meat, fresh garlic, wine, crab claw, rose sauce","38.00",{m:1,sea:1},"granchio"],
+["Al Pollo","Chicken breast, roast capsicum, sundried tomato, garlic, white wine, rose sauce","35.00"],
+["Scallop","Scallops, prawns, cherry tomato, Spanish onion, chilli, garlic, rose sauce","38.00",{m:1,hot:1,sea:1}],
+["Marinara","Mussels, prawns, fish, calamari, scallops, anchovies, cherry tomato, white wine, chilli, Napoletana sauce","39.00",{m:1,hot:2,sea:1},"marinara"]]},
+{id:"risotto",it:"Risotti",t:"Risotto",n:"Every risotto is gluten free",b:"steam",items:[
+["Vegetarian Risotto","Arborio rice tossed with garlic and seasonal vegetables in a rose sauce.","31.00",{gf:1,v:1},"vrisotto"],
+["Pollo Risotto","Arborio rice tossed with mushrooms and chicken, finished with garlic in a rose sauce.","35.00",{gf:1}],
+["Seafood Risotto","Arborio rice tossed with mussels, prawns, fish, calamari, anchovies, parmesan and cherry tomato with garlic in a creamy wine sauce.","44.00",{gf:1,m:1,sea:1},"srisotto"],
+["Al Funghi","Arborio rice, porcini and button mushrooms, creamy wine sauce, garlic, shaved parmesan cheese.","33.00",{gf:1,v:1},"funghi"]]},
+{id:"calzones",it:"Calzoni",t:"Calzones",n:"Folded & oven-baked",b:"flame",items:[
+["Rustico","Mozzarella cheese, ham, salami, mushroom, capsicum, olives, topped with Bolognese rose sauce.","32.00"],
+["Vegetarian Calzone","Mozzarella cheese, mushroom, capsicum, onion, olives, topped with Napoletana sauce.","31.00",{v:1}]]},
+{id:"meats",it:"Carne",t:"Meats",n:"Cooked to your liking",b:"scotch",items:[
+["Scotch Fillet 400g","Cooked to your liking. Served with chips and salad. Add a side sauce $6.","58.00",{gf:1},"scotch"],
+["Beef and Reef","400g Scotch Fillet topped with SA Moreton Bay bug tails, calamari and prawns, served with seasonal vegetables in a creamy lemon garlic sauce.","68.00",{gf:1,sea:1}],
+["Bistecca alla Griglia","400g Scotch Fillet topped with mushrooms in a creamy seeded mustard sauce, served with seasonal vegetables.","58.00",{gf:1}],
+["BBQ Pork Ribs","Marinated pork ribs with tangy BBQ sauce & chips. Half rack $33 · Full rack $55.","33 / 55",{hot:1},"ribs"]]},
+{id:"pollo",it:"Pollo",t:"Chicken",n:"Our chicken classics",b:"surfturf",items:[
+["Pollo Surf & Turf","Grilled chicken breast topped with prawns and calamari, finished with creamy garlic lemon wine sauce, with seasonal vegetables.","43.00",{gf:1,m:1,sea:1},"surfturf"],
+["Chicken Schnitzel","Crumbed chicken, deep fried, served with salad and chips. Add a side sauce $6.","34.00"],
+["Chicken Parmigiana","Crumbed chicken topped with Napoletana sauce and mozzarella cheese, served with chips and salad.","36.00",0,"parmi"],
+["Chicken Mediterranean","Grilled chicken breast topped with Mediterranean wine sauce, served with seasonal vegetables.","36.00",{gf:1}],
+["Pollo Riale","Grilled chicken breast, baby spinach, garlic, pepper, cream sauce, topped with Camembert cheese, with seasonal vegetables.","37.00",{gf:1},"riale"],
+["Chicken Avocado","Grilled chicken breast cooked in a creamy avocado sauce and white wine, with seasonal vegetables.","36.00",{gf:1}]]},
+{id:"seafood",it:"Frutti di Mare",t:"Seafood",n:"Fresh from the sea",b:"pan",items:[
+["Salt & Pepper Squid","Crumbed and fried. Served with chips, salad and aioli.","37.00",{m:1,sea:1},"sps"],
+["Grilled Calamari","Served with chips, salad and aioli.","37.00",{m:1,sea:1},"gcalamari"],
+["Barramundi Piquante","Oven-roasted barramundi fillet topped with spicy garlic and vinaigrette sauce, served with chips and salad.","39.00",{df:1,m:1,hot:3,sea:1}],
+["Atlantic Salmon","Balsamic-glazed salmon fillet on a bed of chef's salad with roasted potatoes.","39.00",{df:1,gf:1,m:1,sea:1},"bsalmon"],
+["Seafood Platter","Australian beer-battered flathead, crumbed prawns, crumbed scallops and crumbed squid, with salad, chips and aioli.","45.00",{m:1,sea:1},"platter"],
+["Garlic Prawns","Pan-fried prawns in garlic, white wine and cream sauce. Served with rice and seasonal vegetables.","42.00",{gf:1,m:1,sea:1}]]},
+{id:"sides",it:"Contorni",t:"Sides & Potato",n:"The perfect partners",b:"wedges",items:[
+["Fries","With tomato sauce.","13.00",{v:1}],
+["Wedges","With sweet chilli and sour cream.","15.00",{v:1},"wedges"],
+["Sweet Potato Fries","With garlic aioli.","15.00",{v:1}],
+["Side Sauce","Mushroom, Diane, gravy or peppercorn.","6.00"],
+["Surf & Turf Sauce","Creamy seafood sauce.","10.00",{m:1,sea:1}],
+["Chips, Garden Salad or Steamed Rice","","6.00",{v:1}],
+["Seasonal Vegetables","","9.00",{v:1}]]},
+{id:"kids",it:"Bambini",t:"Kids",n:"Under 14 · $17 each",b:"pennebol",items:[
+["Penne Bolognese","","17.00",0,"pennebol"],
+["Penne Napoletana","","17.00",{v:1}],
+["Chicken Nuggets & Chips","","17.00"],
+["Chicken Schnitzel & Chips","","17.00"]]}
+];
+const SIGS=[["Granchio","Crab meat, crab claw & rose sauce","38","granchio"],["Marinara","Mussels, prawns, scallops & chilli","39","marinara"],["Lasagna","Bechamel, beef & parmesan","33","lasagna"],["Oysters Kilpatrick","Worcestershire & crispy bacon","POA","kilpatrick"],["Pollo Surf & Turf","Chicken, prawns, calamari, lemon garlic cream","43","surfturf"],["Al Salmone","Smoked salmon, mushroom & cream","35","salmone"],["Princess","Prawn, chicken, bacon & chilli rose","39","princess"],["Seafood Platter","Flathead, prawns, scallops & squid","45","platter"],["BBQ Pork Ribs","Slow-marinated, tangy BBQ","33","ribs"],["San Giorgio Pizza","Our namesake, from the wood oven","23","sgpizza"]];
+
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tagsH=t=>{if(!t)return"";let h="";["gf","v","df","m"].forEach(k=>{if(t[k])h+=`<span class="tg">${k.toUpperCase()}</span>`});if(t.hot)h+=`<span class="tg hot">${t.hot>1?"HOT ×"+t.hot:"HOT"}</span>`;return h?`<span class="tags">${h}</span>`:""};
+const isList=d=>{if(!d)return false;const p=d.replace(/\.$/,"").split(/,\s*/);return p.length>=3&&p.every(x=>x.split(" ").length<=4)};
+const ingChips=d=>`<div class="ings">${d.replace(/\.$/,"").split(/,\s*/).map(x=>`<span>${esc(x)}</span>`).join("")}</div>`;
+const ALL=[];let html="",tabs="";
+MENU.forEach(c=>{
+const items=c.items.map(([n,d,p,t,ph])=>{const key=ALL.length;ALL.push({n,d,p,t,ph,cat:c.t});
+const thumb="";
+const price=Array.isArray(p)?`<span class="prs">${p.map(x=>`<span>${x}</span>`).join("")}</span>`:`<span class="pr">${p==="POA"?"POA":"$"+esc(p)}</span>`;
+const body=d?(isList(d)?ingChips(d):`<p class="ds">${esc(d)}</p>`):"";
+return `<article class="dish" data-k="${key}" data-s="${esc((n+" "+d+" "+c.t).toLowerCase())}" data-t="${Object.keys(t||{}).join(" ")}" tabindex="0">${thumb}<div class="bd"><div class="nm"><h4>${esc(n)}${tagsH(t)}</h4><span class="dots"></span>${price}</div>${body}</div></article>`}).join("");
+html+=`<section class="cat reveal" id="c-${c.id}"><div class="banner"><img loading="lazy" src="${img(c.b)}" alt=""><div class="t"><div class="it">${esc(c.it)}</div><h3>${esc(c.t)}</h3><div class="n">${esc(c.n)}</div></div></div>${c.pre?`<div class="note">${c.pre}</div>`:""}${c.sizes?'<div class="sizes-h"><span>9″</span><span>12″</span><span>15″</span></div>':""}<div class="grid">${items}</div></section>`;
+tabs+=`<a href="#c-${c.id}" data-id="c-${c.id}">${esc(c.t)}</a>`;
+});
+document.getElementById("menuBody").innerHTML=html;
+document.getElementById("tabs").innerHTML=tabs;
+
+// hero
+const HERO=["marinara","pan","lasagna","flame","granchio"];
+document.getElementById("slides").innerHTML=HERO.map((k,i)=>`<img ${i?'loading="lazy"':''} class="${i?"":"on"}" src="${img(k)}" alt="">`).join("");
+const sl=[...document.querySelectorAll("#slides img")];let si=0;setInterval(()=>{sl[si].classList.remove("on");si=(si+1)%sl.length;sl[si].classList.add("on")},5200);
+
+// signatures
+const sigEl=document.getElementById("sig");
+sigEl.innerHTML=SIGS.map(([n,d,p,ph])=>`<div class="card" data-ph="${ph}"><img loading="lazy" src="${img(ph)}" alt="${esc(n)}"><div class="cap"><b>${esc(n)}</b><i>${esc(d)}</i></div><span class="spr">${p==="POA"?"POA":"$"+p}</span></div>`).join("");
+sigEl.addEventListener("click",e=>{const c=e.target.closest(".card");if(!c)return;const i=ALL.findIndex(x=>x.ph===c.dataset.ph);if(i>-1)openDish(i)});
+
+// strip
+const mq=["Pizza","Pasta","Seafood","Steak","Lunch specials till 4pm","$6 drinks till 5pm","Functions & catering","Italian on Rundle!"];
+document.getElementById("strip").innerHTML=[...mq,...mq].map(x=>`<span>${x}</span>`).join("");
+
+// modal
+const modal=document.getElementById("modal"),mbox=document.getElementById("mbox");
+function openDish(k){const x=ALL[k];
+mbox.innerHTML=`<button class="x" aria-label="Close" onclick="closeM()">×</button>
+<div class="mc" style="padding-top:44px"><div class="eyebrow">${esc(x.cat)}</div><h3>${esc(x.n)}</h3>${tagsH(x.t)}
+<div class="mp" style="margin-top:8px">${Array.isArray(x.p)?`9″ $${x.p[0]} · 12″ $${x.p[1]} · 15″ $${x.p[2]}`:(x.p==="POA"?"Price on application":"$"+x.p)}</div>
+${x.d?`<div class="ml">What's in it</div>${isList(x.d)?ingChips(x.d):`<p style="margin:0;font-size:17px;color:#444">${esc(x.d)}</p>`}`:""}
+<div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn gold small" href="#book" onclick="closeM()">Book a Table</a><a class="btn dark small" href="tel:0882231700">Order by Phone</a></div></div>`;
+modal.classList.add("on");document.body.style.overflow="hidden"}
+function closeM(){modal.classList.remove("on");document.body.style.overflow=""}
+modal.addEventListener("click",e=>{if(e.target===modal)closeM()});
+addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
+const mb=document.getElementById("menuBody");
+mb.addEventListener("click",e=>{const d=e.target.closest(".dish");if(d)openDish(+d.dataset.k)});
+mb.addEventListener("keydown",e=>{const d=e.target.closest(".dish");if(d&&e.key==="Enter")openDish(+d.dataset.k)});
+
+// search & filters
+const q=document.getElementById("q"),act=new Set();
+function apply(){const s=q.value.trim().toLowerCase();let n=0;
+document.querySelectorAll(".dish").forEach(el=>{const tg=el.dataset.t.split(" ");const ok=(!s||el.dataset.s.includes(s))&&[...act].every(f=>tg.includes(f));el.style.display=ok?"":"none";if(ok)n++});
+document.querySelectorAll(".cat").forEach(c=>c.style.display=[...c.querySelectorAll(".dish")].some(d=>d.style.display!=="none")?"":"none");
+document.getElementById("empty").style.display=n?"none":"block"}
+q.addEventListener("input",apply);
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{const f=b.dataset.f;act.has(f)?act.delete(f):act.add(f);b.setAttribute("aria-pressed",act.has(f));apply();document.getElementById("menu").scrollIntoView({behavior:"smooth"})});
+
+// nav + tab spy
+const topBar=document.getElementById("top"),links=[...document.querySelectorAll("#tabs a")],tabsEl=document.getElementById("tabs");let last;
+function onScroll(){topBar.classList.toggle("solid",scrollY>60);
+let cur=null;links.forEach(l=>{const t=document.getElementById(l.dataset.id);if(t&&t.style.display!=="none"&&t.getBoundingClientRect().top<190)cur=l});
+links.forEach(l=>l.classList.toggle("on",l===cur));
+if(cur&&cur!==last){last=cur;tabsEl.scrollTo({left:cur.offsetLeft-tabsEl.clientWidth/2+cur.offsetWidth/2,behavior:"smooth"})}}
+let tk;addEventListener("scroll",()=>{if(!tk){tk=requestAnimationFrame(()=>{onScroll();tk=0})}},{passive:true});onScroll();
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.06});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+// open now (Adelaide)
+try{const pt=new Intl.DateTimeFormat("en-AU",{timeZone:"Australia/Adelaide",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+const g=k=>pt.find(p=>p.type===k).value,day=g("weekday"),m=(+g("hour")%24)*60+ +g("minute"),cl=(day==="Fri"||day==="Sat")?1350:1290,on=m>=690&&m<cl;
+const o=document.getElementById("openNow");o.textContent=on?"● Open now — come on in":"● Closed now — see you soon";o.className="open"+(on?"":" n")}catch(e){}
+
+// booking
+const ts=document.getElementById("timeSel");for(let m=690;m<=1290;m+=30){const h=Math.floor(m/60),mm=m%60,hh=((h+11)%12)+1;ts.insertAdjacentHTML("beforeend",`<option>${hh}:${mm?"30":"00"} ${h<12?"am":"pm"}</option>`)}
+ts.value="7:00 pm";
+const f=document.getElementById("bookForm");try{f.date.min=new Date().toISOString().slice(0,10)}catch(e){}
+f.addEventListener("submit",e=>{e.preventDefault();const ok=document.getElementById("ok");
+if(!f.name.value.trim()||!f.phone.value.trim()||!f.date.value){ok.style.display="block";ok.textContent="Please add your name, phone and date so we can confirm your table.";return}
+const nl="%0D%0A",enc=encodeURIComponent;
+const body=`Hi San Giorgio,${nl}${nl}I'd like to book a table:${nl}${nl}Name: ${enc(f.name.value)}${nl}Phone: ${enc(f.phone.value)}${nl}Guests: ${enc(f.guests.value)}${nl}Date: ${enc(f.date.value)}${nl}Time: ${enc(f.time.value)}${nl}Requests: ${enc(f.notes.value||"-")}${nl}${nl}Grazie!`;
+location.href=`mailto:info@sangiorgio.com.au?subject=${enc("Table booking — "+f.guests.value+" guests, "+f.date.value+" "+f.time.value)}&body=${body}`;
+ok.style.display="block";ok.innerHTML="Grazie! Your email app should open with your booking request — just press send. No email app? Call us on <a href='tel:0882231700' style='color:#DFA41A'>(08) 8223 1700</a>.";});
+</script>
+</body>
+</html>
